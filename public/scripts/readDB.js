@@ -18,9 +18,11 @@ function readDB(){
 	var people = firebase.database().ref().child("People");
 	people.on("child_added", function(people){
 
+		var id = people.key;
 		var name = people.child("Name").val();
+		var age = people.child("Age").val();
 
-		$("#table_body").append("<tr><td>"+name+"</td></tr>");
+		$("#table_body").append("<tr><td>"+id+"</td><td>"+name+"</td><td>"+age+"</td></tr>");
 	});
 };
 
