@@ -1,0 +1,23 @@
+{
+  "name": "carturesti",
+  "version": "1.0.0",
+  "description": "Carturesti",
+  "main": "appp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afilipescu/Carturesti.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afilipescu/Carturesti/issues"
+  },
+  "homepage": "https://github.com/afilipescu/Carturesti#readme",
+  "dependencies": {
+    "express": "^4.16.1",
+    "firebase": "^4.4.0"
+  }
+}

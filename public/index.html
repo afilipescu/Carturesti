@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+  <button onclick="readDB()">Read DB</button>
+  <textarea id ="textID" placeholder="mumu"></textarea>
+
+  <table style="width:100%">
+    <thead>
+    <td>Name</td>
+    </thead>
+    <tbody id="table_body">
+
+    </tbody>
+  </table>
+</body>
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCuKjA24msOf_AsBhHAH1FPK4t4SGyix6w",
+    authDomain: "carturestiro-ee4c9.firebaseapp.com",
+    databaseURL: "https://carturestiro-ee4c9.firebaseio.com",
+    projectId: "carturestiro-ee4c9",
+    storaFgeBucket: "carturestiro-ee4c9.appspot.com",
+    messagingSenderId: "579909216678"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scripts/readDB.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
