@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="">
 <head>
  <!-- Required meta tags -->
  <meta charset="utf-8">
@@ -11,10 +11,17 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+
 </head>
 <body>
   <button onclick="readDB()">Read DB</button>
   <textarea id ="textID" placeholder="mumu"></textarea>
+
+  <div >
+    <p>Name: <input type="text" ng-model="name"></p>
+    <p ng-bind="name"></p>
+  </div>
 
   <table class="table">
     <thead class="thead-inverse">
@@ -27,6 +34,20 @@
     <tbody id="table_body">
     </tbody>
   </table>
+
+  <button md-button>Click me!</button>
+
+  <div class="example-container mat-elevation-z8">
+    <md-table>
+     <ng-container mdColumnDef="position">
+      <md-header-cell > No. </md-header-cell>
+    </ng-container>
+
+     <ng-container mdColumnDef="Name">
+      <md-header-cell > Name </md-header-cell>
+    </ng-container>
+  </md-table>
+</div>
 
 </body>
 </html>
